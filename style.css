@@ -1,0 +1,146 @@
+:root {
+    --bg-color: #f4f0ea;
+    --card-bg: #faf7f2;
+    --text-color: #2c3e50;
+    --text-muted: #666666;
+    --accent-color: #0071e3;
+    --accent-hover: #0077ed;
+    --border-color: #e3decb;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 750px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.kindle-screen {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+}
+
+.story-text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin: 20px 0 30px 0;
+    text-align: justify;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+}
+
+.btn {
+    flex: 1;
+    min-width: 140px;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.btn.primary {
+    background-color: #1d1d1f;
+    color: #fff;
+}
+
+.btn.primary:hover {
+    background-color: #333336;
+}
+
+.btn.secondary {
+    background-color: #e5e5ea;
+    color: #1d1d1f;
+}
+
+.btn.secondary:hover {
+    background-color: #d1d1d6;
+}
+
+.btn.accent {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+.btn.accent:hover {
+    background-color: var(--accent-hover);
+}
+
+.panel {
+    margin-top: 25px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.quiz-question {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.quiz-options label {
+    display: block;
+    font-weight: normal;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.result-box {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}

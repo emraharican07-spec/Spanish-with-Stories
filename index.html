@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Viaje de Español - Crecimiento Personal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lecturas de Crecimiento</h1>
+            <p class="subtitle">B1/B2 • Desarrollo Personal, Naturaleza y Conexión</p>
+        </header>
+
+        <main class="card kindle-screen">
+            <section id="story-section">
+                <h2 id="story-title">Cargando historia...</h2>
+                <div id="story-content" class="story-text">
+                    <!-- Hikaye buraya gelecek -->
+                </div>
+            </section>
+
+            <div class="button-group">
+                <button id="btn-toggle-vocab" class="btn secondary">Kelimeleri Gör / Gizle</button>
+                <button id="btn-refresh" class="btn primary">Yenile (Yeni Hikaye)</button>
+                <button id="btn-toggle-quiz" class="btn accent">Kelime Testini Çöz (10 Soru)</button>
+            </div>
+
+            <!-- Kelime Listesi Alanı -->
+            <div id="vocab-container" class="hidden panel">
+                <h3>Kelime Karşılıkları</h3>
+                <ul id="vocab-list"></ul>
+            </div>
+
+            <!-- Test Alanı -->
+            <div id="quiz-container" class="hidden panel">
+                <h3>Quiz de Vocabulario</h3>
+                <div id="quiz-questions"></div>
+                <button id="btn-submit-quiz" class="btn primary" style="margin-top: 15px;">Sonuçları Gör</button>
+                <div id="quiz-result" class="result-box"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="stories.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
